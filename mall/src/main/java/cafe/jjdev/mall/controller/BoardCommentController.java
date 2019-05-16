@@ -16,7 +16,7 @@ public class BoardCommentController {
 	public String addBoardComment(BoardComment boardComment) {
 		int result = boardCommentService.addBoardComment(boardComment);
 		
-		System.out.println("result 에 담아놓고 사용도안하는데 왜담은걸까 ...");
+		System.out.println("[addBoardComment]");
 		
 		return "redirect:/board/getBoard?boardNo="+boardComment.getBoardNo();
 	}
